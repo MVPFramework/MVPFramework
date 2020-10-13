@@ -555,8 +555,5 @@ namespace MVPFramework
                 this.presenterStatus = PresenterStatus.OnlyDataAfterClear;
             }
         }
-
     }
-
-
 }

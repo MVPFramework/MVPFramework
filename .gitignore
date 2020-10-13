@@ -129,3 +129,7 @@ UpgradeLog*.htm
 !BuildTools/*.*
 !Shared Assemblies/*.*
 !Shared Silverlight Assemblies/*.*
+
+nuget.exe
+*.nupkg
+*.nuspec
