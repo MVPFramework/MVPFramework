@@ -9,22 +9,22 @@ namespace MVPFramework
 {
     public enum PresenterType
     {
-        Default = 1,// 啥都没有
-        View = 2,// Presenter:View = 1:1  && 没有Model
-        PresenterView11 = 3, // Presenter: View =  1:1
-        PresenterViewNN // Presenter : View = n:n
+        Default = 1,
+        View = 2,
+        PresenterView11 = 3,
+        PresenterViewNN
     }
 
     public enum PresenterStatus
     {
-        Default = 1,// 默认状态
-        Initing = 2, //正在初始化
-        Inited = 3,// 初始化完成
-        OnlyDataAfterClear = 4//Presenter清理之后,只留下了数据部分 (这个仅适用于PresenterType 是 ModelView的情况)
+        Default = 1,
+        Initing = 2,
+        Inited = 3,
+        OnlyDataAfterClear = 4
     }
 
     /// <summary>
-    /// 普通接口
+    /// IPresenter
     /// </summary>
     public interface IPresenter
     {
@@ -66,7 +66,6 @@ namespace MVPFramework
 
         protected Presenter()
         {
-            //GetOrCreateViewLogic(this.GetType());
             // 设置Presenter<TView> 绑定的所有ViewLogic类型
             var allViewLogicType  = this.GetType().GetCustomAttributes(typeof(ViewLogicBindingAttribute), true)
                 .OfType<ViewLogicBindingAttribute>()
@@ -166,20 +165,6 @@ namespace MVPFramework
         }
 
     }
-
-    /// <summary>
-    /// Presenter 接口, 有View、Model
-    /// </summary>
-    /// <typeparam name="TView"></typeparam>
-    /// <typeparam name="TModel"></typeparam>
-    //public interface IPresenter<TView, TModel> : IPresenter
-    //    where TView : class, IViewLogic
-    //    where TModel : class, IModel
-    //{
-    //    TView View { get; }// Presenter 中只能访问View
-    //    TModel Model { get; set; }// Presenter 中可以访问和修改Model
-    //}
-
 
     /// <summary>
     /// Presenter抽象类。 
