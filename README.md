@@ -8,7 +8,7 @@ MVPFramework是一个基于C#实现的UI框架，旨在帮助开发者以一种�
 ### 版本相关
 |       平台       |      适用版本      |   分支   |  状态   |
 | --------------- | ----------------- | -------- | ------- |
-| Window XP 及以上 | .Net FrameWork4.0 | xp-net40 | success |
+| Window XP 及以上 | .Net FrameWork4.0 | master | success |
 
 注意: XP平台下需要主动安装.Net Framework4.0
 
@@ -18,8 +18,8 @@ Nuget:
 ![](README_images/MVPFramework nuget地址添加.png)
 2. 在【浏览】页签下可找到MVPFramework
 
-github
-1. 
+github  
+1. clone 项目
 ```
 git clone git@github.com:MVPFramework/MVPFramework.git
 ```
@@ -63,8 +63,9 @@ git clone git@github.com:MVPFramework/MVPFramework.git
       |  +-------------------------+                      +----------------------------+|                                               
       |---------------------------------------------------------------------------------+                                               
 
+说明：
 Model Layer: 只包含数据结构的定义(需要区别于传统的MVC中的Model层)  
 Presenter Layer: 该层是极重的一层，包含数据的计算和缓存、界面的显示周期等  
 View Layer:  
-    View Component Layer: UI层  
-    View Logic Layer: UI 逻辑层
+- View Component Layer: UI层  
+- View Logic Layer: UI 逻辑层
