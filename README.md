@@ -15,7 +15,7 @@ MVPFramework是一个基于C#实现的UI框架，旨在帮助开发者以一种�
 ### Getting Started
 Nuget:
 1. 添加Nuget地址，如下图:  
-![](README_images/MVPFramework nuget地址添加.png)
+![](README_images/MVPFramework-Nuget.png)
 2. 在【浏览】页签下可找到MVPFramework
 
 github  
