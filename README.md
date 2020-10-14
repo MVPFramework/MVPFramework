@@ -15,7 +15,7 @@ MVPFramework是一个基于C#实现的UI框架，旨在帮助开发者以一种�
 ### Getting Started
 Nuget:
 ```
-nuget Install-Package MVPFramework -Version 2020.10.1
+Install-Package MVPFramework -Version 2020.10.1
 ```
 
 github  
